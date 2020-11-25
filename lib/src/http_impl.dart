@@ -1086,6 +1086,12 @@ class _HttpClientRequest extends _HttpOutboundMessage<HttpClientResponse>
       headers.chunkedTransferEncoding = true;
     }
   }
+  
+  @Since("2.10")
+  @override
+  void abort([Object? exception, StackTrace? stackTrace]) {
+    // your implementation
+  }
 
   Future<HttpClientResponse> get done {
     if (_response == null) {
