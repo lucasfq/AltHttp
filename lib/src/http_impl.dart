@@ -1087,7 +1087,7 @@ class _HttpClientRequest extends _HttpOutboundMessage<HttpClientResponse>
     }
   }
   
-  @override
+  @Since("2.12")
   void abort([Object? exception, StackTrace? stackTrace]) {
     // your implementation
   }
