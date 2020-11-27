@@ -1088,7 +1088,7 @@ class _HttpClientRequest extends _HttpOutboundMessage<HttpClientResponse>
   }
   
   @override
-  void abort([Object? exception, StackTrace? stackTrace]) {
+  void abort([Object exception, StackTrace stackTrace]) {
     // your implementation
   }
 
